@@ -225,9 +225,9 @@ button {
    Mobile menu styling
    ========================= */
 
-/* Slide-in + fade (mobile) */
+/* 
 .mobile-menu {
-  /* початковий стан — схований зліва */
+
   transform: translateX(-100%);
   opacity: 0;
   visibility: hidden;
@@ -239,7 +239,6 @@ button {
   z-index: 120;
 }
 
-/* Видимий стан — слайднут вправо */
 .mobile-menu.is-open {
   transform: translateX(0%);
   opacity: 1;
@@ -248,7 +247,7 @@ button {
   transition-delay: 0s;
 }
 
-/* контейнер меню */
+
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
@@ -258,7 +257,6 @@ button {
   box-sizing: border-box;
 }
 
-/* close button */
 .mobile-menu-close {
   position: absolute;
   top: 20px;
@@ -280,7 +278,7 @@ button {
 }
 .mobile-menu-close svg { width: 12px; height: 12px; }
 
-/* NAV */
+
 .mobile-nav-main {
   margin-bottom: 24px;
 }
@@ -313,7 +311,6 @@ button {
   background: rgba(77,90,229,0.06);
 }
 
-/* contacts block */
 .mobile-nav-address {
   margin-top: 18px;
   padding-top: 8px;
@@ -340,11 +337,11 @@ button {
   outline: none;
 }
 
-/* social row */
+
 .moboli-social-list {
   display: flex;
   gap: 12px;
-  margin-top: auto; /* зафіксує соц-іконки внизу меню */
+  margin-top: auto;
   padding-bottom: 20px;
 }
 .mobile-social-link {
@@ -372,7 +369,7 @@ button {
   fill: #fff;
 }
 
-/* Ensure large tappable burger */
+
 .burger-btn {
   width: 44px;
   height: 44px;
@@ -390,14 +387,12 @@ button {
   outline: none;
 }
 
-/* Accessibility focus ring */
 .mobile-menu a:focus,
 .mobile-menu button:focus {
   box-shadow: 0 0 0 3px rgba(77,90,229,0.16);
   border-radius: 6px;
 }
 
-/* small screens tweaks to avoid overflow */
 .mobile-menu,
 .mobile-menu * {
   -webkit-tap-highlight-color: transparent;
@@ -406,14 +401,14 @@ button {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* hide mobile menu on >=768 (already in file, but reinforce) */
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none !important;
   }
-}
+} */
 
-/* .mobile-menu {
+.mobile-menu {
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -457,7 +452,7 @@ button {
   .mobile-menu {
     display: none;
   }
-} */
+}
 
 .section {
   padding: 120px 0;
